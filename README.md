@@ -14,13 +14,13 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone https://github.com/laboratoryyingong/e-mall.git` this repository
 * `cd e-mall`
 * `npm install`
 
 ## Running / Development
 
-* `ember serve`
+* `ember serve` or run `npm run start` to start development server
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 * Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
 

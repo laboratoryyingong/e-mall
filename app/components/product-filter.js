@@ -14,10 +14,10 @@ export default Component.extend({
 
     actions: {
         handleFilterEntry() {
-            let filterInputValue = this.value;
+            let filterInputValue = this.value.trim();
             let filterAction = this.filter;
             filterAction(filterInputValue).then((filterResults) => {
-                if (filterResults.query === this.value) {
+                if (filterResults.query.trim() === this.value.trim()) {
                   this.set('results', filterResults.results);
                 }
             });
