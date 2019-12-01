@@ -1,0 +1,19 @@
+<div class="py-4 form-inline justify-content-center">
+  <div class="form-group input-group mb-3">
+    {{input
+        value=this.value
+        type="text"
+        class = "form-control"
+        placeholder="Search by Product Name"
+    }} 
+    <div class="input-group-append">
+      <BsButton
+        @type="primary"
+        @defaultText="Search"
+        @onClick={{action "handleFilterEntry"}}
+      />
+    </div>  
+  </div>
+</div>
+
+{{yield this.results}}

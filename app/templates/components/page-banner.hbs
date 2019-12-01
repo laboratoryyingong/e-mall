@@ -1,0 +1,25 @@
+<div class="pt-5">
+    <BsCarousel
+    @autoPlay={{true}}
+    @wrap={{true}}
+    @index={{0}}
+    @interval={{5000}}
+    @keyboard={{true}}
+    @ltr={{true}}
+    @pauseOnMouseEnter={{true}}
+    @showControls={{true}}
+    @showIndicators={{true}}
+    as |car|>
+    <car.slide>
+        <img alt="First slide" src="https://ps.w.org/wp-carousel-free/assets/banner-1544x500.png?rev=2000936">
+    </car.slide>
+    <car.slide>
+        <img alt="Second slide" src="https://ps.w.org/wp-carousel-free/assets/banner-1544x500.png?rev=2000936">
+    </car.slide>
+    <car.slide>
+        <img alt="Third slide" src="https://ps.w.org/wp-carousel-free/assets/banner-1544x500.png?rev=2000936">
+    </car.slide>
+    </BsCarousel>
+</div>
+
+{{yield}}
