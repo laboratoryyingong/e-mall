@@ -5,5 +5,6 @@ export default DS.Model.extend({
     price: DS.attr(),
     rating: DS.attr(),
     intro: DS.attr(),
+    image: DS.attr(),
     productDetails: DS.belongsTo('product-detail')
 });

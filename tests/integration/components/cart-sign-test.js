@@ -3,24 +3,18 @@ import { setupRenderingTest } from 'ember-qunit';
 import { render } from '@ember/test-helpers';
 import { hbs } from 'ember-cli-htmlbars';
 
-module('Integration | Component | cart', function(hooks) {
+module('Integration | Component | cart-sign', function(hooks) {
   setupRenderingTest(hooks);
 
-  test('it renders', async function(assert) {
+  test('the badge renders correct count number', async function(assert) {
     // Set any properties with this.set('myProperty', 'value');
     // Handle any actions with this.set('myAction', function(val) { ... });
 
-    await render(hbs`<Cart />`);
+    this.set('count', 0);
+    await render(hbs`<CartSign />`);
+    
+    assert.equal(this.element.querySelector(".badge").innerHTML.trim(), 0);
 
-    assert.equal(this.element.textContent.trim(), '');
 
-    // Template block usage:
-    await render(hbs`
-      <Cart>
-        template block text
-      </Cart>
-    `);
-
-    assert.equal(this.element.textContent.trim(), 'template block text');
   });
 });

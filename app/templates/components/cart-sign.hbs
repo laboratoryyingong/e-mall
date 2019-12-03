@@ -1,5 +1,7 @@
-<BsButton @type="success">
+<LinkTo @route="cart">
+  <BsButton @type="success">
     Cart
     <span class="badge badge-light">{{this.count}}</span>
-</BsButton>
+  </BsButton>
+</LinkTo>
 {{yield}}

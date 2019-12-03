@@ -2,18 +2,16 @@
   <PageBanner></PageBanner>
 </div>
 
-<ProductFilter
-    @filter={{action "searchByKeywords"}} as |filteredResults|
->
-    <div class="container">
-        <div class="row">
-            <div class="card-columns">
-            {{#each filteredResults as |product|}}
-                <ProductListing  @product={{product}}></ProductListing>
-            {{/each}}
-            </div>
-        </div>
+<ProductFilter @filter={{action "searchByKeywords"}} as |filteredResults|>
+  <div class="container">
+    <div class="row">
+      <div class="card-columns">
+        {{#each filteredResults as |product|}}
+          <ProductListing @product={{product}}></ProductListing>
+        {{/each}}
+      </div>
     </div>
+  </div>
 </ProductFilter>
 
 {{outlet}}

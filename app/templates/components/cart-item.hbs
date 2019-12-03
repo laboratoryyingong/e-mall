@@ -1,0 +1,13 @@
+<tr class="fixed-tr">
+  <td>
+    <BsButton @type="warning" @onClick={{action "removeItem"}}>
+      Remove from List
+    </BsButton>
+  </td>
+  <td>Image</td>
+  <td>{{this.name}}</td>
+  <td>{{this.UnitPrice}}</td>
+  <td>{{this.UnitNumber}}</td>
+  <td>{{this.TotalPrice}}</td>
+</tr>
+{{yield}}

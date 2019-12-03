@@ -1,0 +1,12 @@
+<table class="table pt-5">
+  <tbody>
+
+    {{#each-in groupItems as |name items|}}
+
+      <CartItem @name={{name}} @items={{items}} @action_update={{action "updateItemList"}}></CartItem>
+
+    {{/each-in}}
+
+  </tbody>
+</table>
+{{yield}}

@@ -1,5 +1,5 @@
 body{
-    background: black;
+    background: white;
 }
 
 nav {
@@ -14,4 +14,10 @@ footer {
 
 .card-footer {
     background: #ffffff;
+}
+
+/* offest of table */
+.fixed-tr{
+    display: table;
+    width: 100%;
 }

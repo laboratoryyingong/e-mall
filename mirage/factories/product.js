@@ -27,6 +27,10 @@ export default Factory.extend({
     return intro;
   },
 
+  image(){
+    return "assets/images/sample.png"
+  },
+
   afterCreate(product, server) {
     server.create('product-detail', {
       product
