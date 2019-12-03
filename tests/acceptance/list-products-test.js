@@ -18,5 +18,7 @@ module('Acceptance | list products', function(hooks) {
     assert.equal(currentURL(), '/');
   });
 
+  //todo:
+
 
 });
