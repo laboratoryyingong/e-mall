@@ -14,8 +14,6 @@ export default Component.extend({
     this.cart.update();
     let updateItems = this.cart.sessionItems;
 
-    console.log(updateItems)
-
     // group items to groups
     let updateGroupItems = updateItems.reduce((r, a) => {
         r[a.name] = [...r[a.name] || [], a];

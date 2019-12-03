@@ -28,7 +28,7 @@ export default Factory.extend({
   },
 
   image(){
-    return "assets/images/sample.png"
+    return "/assets/images/sample.png"
   },
 
   afterCreate(product, server) {

@@ -1,16 +1,18 @@
-<div class="jumbo show-listing">
-  <h2 class="title">{{this.model.name}}</h2>
-  <div class="content">
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">{{this.model.name}}</h1>
     <div>
-      {{!-- <img src={{this.model.image}} class="rental-pic" alt="Picture of {{this.model.title}}"> --}}
+      <img src={{this.model.image}} >
     </div>
-    <div class="detail-section">
-      <div class="detail owner">
-        <strong>price : </strong> {{this.model.price}}
-      </div>
-      <div class="description">
-        <p>{{this.model.intro}}</p>
-      </div>
-    </div>
+    <p class="lead">
+      <strong>price : </strong> 
+      {{this.model.price}}
+    </p>
+    <p class="lead">
+      {{this.model.intro}}
+    </p>
+    <LinkTo @route="home" class="btn btn-primary">
+      Return to Home Page
+    </LinkTo>
   </div>
 </div>

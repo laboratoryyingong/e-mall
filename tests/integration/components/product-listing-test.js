@@ -10,17 +10,12 @@ module('Integration | Component | product-listing', function(hooks) {
     // Set any properties with this.set('myProperty', 'value');
     // Handle any actions with this.set('myAction', function(val) { ... });
 
-    await render(hbs`<ProductListing />`);
+    this.set('product', {"image":"/assets/images/sample.png","intro":"A product description ","rating":5,"price":421,"name":"Product-number-0"});
 
-    assert.equal(this.element.textContent.trim(), '');
+    await render(hbs`<ProductListing @product={{this.product}}></ProductListing>`);
 
-    // Template block usage:
-    await render(hbs`
-      <ProductListing>
-        template block text
-      </ProductListing>
-    `);
-
-    assert.equal(this.element.textContent.trim(), 'template block text');
+    assert.equal(this.element.querySelector('.card-title').textContent, 'Product-number-0');
+ 
+    // todo: add more test
   });
 });

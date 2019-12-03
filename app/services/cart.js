@@ -36,8 +36,8 @@ export default Service.extend({
 
   },
 
-  removeSessionItems(item){
-
+  removeSessionItems(){
+    // todo: remove record 
   },
 
   getSessionItems() {
